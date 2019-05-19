@@ -1,0 +1,43 @@
+*{margin:0;padding:0;}
+
+body {
+    background-color: #E4E4E4;
+}
+
+.bloc_page{
+    margin: auto;
+    width: 960px;
+    display: grid;
+    grid-gap: 20px;
+    background-color: #FFF;
+}
+
+.logo {
+    text-align: center;
+}
+nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+nav a {
+    display:block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bannier {
+    background:url(../images/yugioh_ban.jpg);
+    background-size: cover;
+    height: 300px;
+}
+
+footer {
+    background-color: black;
+    height: auto;
+}
