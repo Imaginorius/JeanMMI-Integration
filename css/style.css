@@ -4,40 +4,179 @@ body {
     background-color: #E4E4E4;
 }
 
+.btn {
+    background-color: #000;
+    color: #FFF;
+    text-decoration: none;
+    padding: 20px;
+    width: 50px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
 .bloc_page{
     margin: auto;
     width: 960px;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 10px;
     background-color: #FFF;
+}
+
+header {
+    background-color: black;
 }
 
 .logo {
     text-align: center;
+    padding: 20px;
 }
-nav ul {
+
+.logo img {
+    height: 120px;
+    width: 121px;
+}
+.main-nav ul {
     display: grid;
     grid-gap: 20px;
     padding: 0;
     list-style: none;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
 }
 
-nav a {
+.main-nav a {
     display:block;
     text-decoration: none;
     padding: 0.8rem;
     text-align: center;
+    color: white;
     text-transform: uppercase;
 }
 
 .bannier {
-    background:url(../images/yugioh_ban.jpg);
+    /*background:url(../images/yugioh_ban.jpg);*/
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 300px;
+    color:#000;
+  
+}
+
+.bannier h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.bannier p {
+    text-align: justify;
+    padding: 20px;
+}
+
+.first-section {
+    display: grid;
+
+}
+
+.first-section h1 {
+    text-align: center;
+}
+
+.presentation {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10px;
+   
+    background-color: gainsboro;
+}
+
+.info {
+    padding: 10px;
+}
+
+.info h2 {
+    margin-bottom: 10px;
+}
+ 
+.info p{
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+
+
+.porfolio_produit {
+    display: grid;
+    grid-gap: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.galerie_produit {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6, minmax(100px, 1fr));
+
+}
+
+.galerie_produit h3 {
+    font-size: 0.8rem;
+    text-align: left;
+}
+.galerie_produit img {
+    width: 100%;
 }
 
 footer {
     background-color: black;
     height: auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-auto-rows:minmax(200px, auto) ;
+    grid-template-columns: repeat(4, 1fr);
+    color: #FFF;
+}
+
+.footer_nav {
+    
+   
+}
+
+.footer_nav ul {
+    list-style-type: none;
+}
+
+.footer_nav li {
+    padding-bottom: 10px;
+}
+ .footer_nav a {
+  text-decoration: none;
+  color: #FFF;
+
+}
+
+.societe {
+   
+    color: #FFF;
+
+   
+}
+
+.contact ul {
+   list-style-type: none;
+    
+}
+
+.contact a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.fab {
+    color: #FFF;
+    font-size: 1.5rem;
+    
 }

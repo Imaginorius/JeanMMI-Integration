@@ -1,0 +1,98 @@
+*{margin:0;padding:0;}
+
+.bloc_page{
+    margin: auto;
+    width: 960px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(250, auto);
+    background-color: #FFF;
+}
+
+header {
+    background-color: black;
+    color: #FFF;
+    grid-column: 1/13;
+}
+
+.logo {
+    text-align: center;
+    padding: 20px;
+    color: #FFF;
+}
+.main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.main-nav a {
+    display:block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.main-nav li {
+    grid-column: 3/10;
+}
+
+.bannier {
+    background:url(../images/yugioh_ban.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+    color:#000;
+    grid-column: 1/13;
+  
+}
+
+.bannier h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.bannier p {
+    text-align: justify;
+    padding: 20px;
+}
+
+.presentation {
+    padding: 20px;
+    grid-auto-rows: auto;
+    grid-column: 2/12;
+     
+ }
+ .presentation h1 {
+     text-align: center;
+     font-size: 2rem;
+     margin-bottom: 10px;
+ }
+ 
+ .presentation p {
+     text-align: justify;
+ }
+
+ .porfolio_produit {
+    display: grid;
+    text-align: center;
+    padding: 10px;
+}
+
+.galerie_produit {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6, minmax(100px, 1fr));
+
+}
+
+.galerie_produit img {
+    width: 100%;
+}
