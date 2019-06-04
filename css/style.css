@@ -8,7 +8,7 @@
     --rouge: #801D28;
     --noir:#0E1011;
     --gris:#E4E4E4;
-    --grisbleu:#C8C8C8;
+    --blancgris: #F3F3F3;
 }
 
 
@@ -118,7 +118,7 @@ header {
     grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 10px;
-    background-color: var(--grisbleu);
+    background-color: var(--blancgris);
 }
 
 .info {
@@ -267,7 +267,7 @@ footer {
     }
 
     .galerie_produit {
-        background-color: var(--grisbleu);
+        background-color: var(--blancgris);
         grid-template-columns: repeat( 1,minmax(100px, 1fr));
         
     }
