@@ -3,7 +3,7 @@
 * {
     box-sizing: border-box;
   }
-  
+
 :root {
     --rouge: #801D28;
     --noir:#0E1011;
@@ -22,13 +22,19 @@ body {
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
+    
 }
 
-h1, h2, h3 {
+.btn a {
+ text-decoration: none;
+ color: #FFF;
+}
+
+h1, h2, label {
     font-family: 'Old Standard TT', serif;
 }
 
-p, a , li{
+p, h3, a , li{
     font-family: 'Noto Sans HK', sans-serif;
 }
 
@@ -84,7 +90,7 @@ header {
 }
 
 .bannier {
-    background:url(../images/yugioh_ban.jpg);
+    background:url(../images/boutique-banniere.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -116,13 +122,15 @@ header {
 .presentation {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin-top: 10px;
     background-color: var(--blancgris);
 }
 
 .info {
     display: grid;
+    width: 70%;
+    margin: auto;
     padding: 10px;
     align-items: center;
     justify-items: center;
@@ -148,23 +156,116 @@ header {
     padding: 10px;
 }
 
-.galerie_produit {
+.second-section h1 {
+    margin-bottom: 10px;
+}
+
+.galerie_blog {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr));
-    
-
+    grid-template-columns: repeat(3, minmax(100px,1fr));
 }
 
-.galerie_produit h3 {
+.galerie_blog article {
+    background-color: var(--blancgris);
+    padding: 10px;
+}
+
+.galerie_blog h3 {
+    padding-bottom: 10px;
     font-size: 0.8rem;
-    text-align: left;
+}
+
+.galerie_blog p {
+    text-align: justify;
+    font-size: 0.5rem;
+}
+
+.galerie_blog img {
+    width: 80%;
+    padding: 10px;
 }
 
 
-.galerie_produit img {
-    width: 100%;
+
+
+/*------------footer ---------*/
+
+footer {
+    background-color: var(--noir);
+    height: auto;
+    padding: 10px;
+    display: grid;
+    grid-gap: 20px;
+    grid-auto-rows:minmax(200px, auto) ;
+    grid-template-columns: repeat(4, 1fr);
+    color: #FFF;
 }
+
+.logo-footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-footer img {
+    height: 120px;
+    width: 121px;
+}
+
+
+.footer_nav h3 {
+    padding-bottom: 20px;
+}
+
+.footer_nav ul {
+    list-style-type: none;
+}
+
+.footer_nav li {
+    padding-bottom: 10px;
+}
+ .footer_nav a {
+  text-decoration: none;
+  color: #FFF;
+
+}
+.societe h3 {
+    margin-bottom: 20px;
+}
+.societe p{
+   
+   font-size: 0.8rem;
+   text-align: justify;
+
+   
+}
+
+.contact h3{
+    margin-bottom: 20px;
+}
+.contact ul {
+   list-style-type: none;
+    
+}
+.contact li {
+    padding-bottom: 10px;
+}
+
+.contact a {
+    padding-right: 10px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.fab {
+    color: #FFF;
+    font-size: 1.5rem;
+    
+}
+
+
+
+/*-----------------------footer*-----------------*/
 
 footer {
     background-color: var(--noir);
@@ -270,29 +371,29 @@ footer {
         text-align: center;
     }
 
-    .galerie_produit {
-        background-color: var(--blancgris);
+    .galerie_blog {
+        
         grid-template-columns: repeat( 1,minmax(100px, 1fr));
         
     }
 
-    .galerie_produit h3 {
+    .galerie_blog h3 {
         text-align: center;
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
    
-    .galerie_produit article {
+    .galerie_blog article {
         padding: 10px;
         border-bottom: 3px solid var(--noir);
     }
 
-    .galerie_produit article:hover {
+    .galerie_blog article:hover {
         color: #FFF;
         background-color: var(--rouge);
     }
 
-    .galerie_produit img {
+    .galerie_blog img {
         width: 40%;
     }
 
@@ -313,6 +414,8 @@ footer {
         border-bottom: 1px solid #FFF;
         
     }
+
+
 
     .societe {
         border-bottom: 1px solid #FFF;

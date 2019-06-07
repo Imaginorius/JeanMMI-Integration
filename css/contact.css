@@ -293,6 +293,10 @@ footer {
   color: #FFF;
 
 }
+
+.footer_nav a:hover {
+    background-color: #801D28;
+}
 .societe h3 {
     margin-bottom: 20px;
 }
@@ -398,6 +402,8 @@ footer {
         border-bottom: 1px solid #FFF;
         
     }
+
+
 
     .societe {
         border-bottom: 1px solid #FFF;

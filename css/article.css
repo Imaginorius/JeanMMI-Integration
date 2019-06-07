@@ -141,30 +141,7 @@ header {
 
 
 
-.second-section {
-    display: grid;
-    grid-gap: 10px;
-    text-align: center;
-    padding: 10px;
-}
 
-.galerie_produit {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr));
-    
-
-}
-
-.galerie_produit h3 {
-    font-size: 0.8rem;
-    text-align: left;
-}
-
-
-.galerie_produit img {
-    width: 100%;
-}
 
 footer {
     background-color: var(--noir);
@@ -270,31 +247,6 @@ footer {
         text-align: center;
     }
 
-    .galerie_produit {
-        background-color: var(--blancgris);
-        grid-template-columns: repeat( 1,minmax(100px, 1fr));
-        
-    }
-
-    .galerie_produit h3 {
-        text-align: center;
-        font-size: 1.3rem;
-    }
-
-   
-    .galerie_produit article {
-        padding: 10px;
-        border-bottom: 3px solid var(--noir);
-    }
-
-    .galerie_produit article:hover {
-        color: #FFF;
-        background-color: var(--rouge);
-    }
-
-    .galerie_produit img {
-        width: 40%;
-    }
 
 
     .logo-footer {

@@ -22,6 +22,12 @@ body {
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
+    
+}
+
+.btn a {
+ text-decoration: none;
+ color: #FFF;
 }
 
 h1, h2, label {
@@ -116,7 +122,6 @@ header {
 .presentation {
     display: grid;
     grid-gap: 10px;
-    
     grid-template-columns: repeat(1, 1fr);
     margin-top: 10px;
     background-color: var(--blancgris);
@@ -163,6 +168,12 @@ header {
 
 .galerie_produit article {
     background-color: var(--blancgris);
+    
+}
+
+.galerie_produit article:hover {
+    background-color: var(--rouge);
+    color: #FFF;
 }
 
 .galerie_produit h3 {
@@ -294,6 +305,10 @@ footer {
   color: #FFF;
 
 }
+
+.footer_nav a:hover {
+    background-color: #801D28;
+}
 .societe h3 {
     margin-bottom: 20px;
 }
@@ -399,6 +414,8 @@ footer {
         border-bottom: 1px solid #FFF;
         
     }
+
+
 
     .societe {
         border-bottom: 1px solid #FFF;
